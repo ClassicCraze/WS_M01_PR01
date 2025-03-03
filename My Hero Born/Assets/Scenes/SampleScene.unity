@@ -19706,7 +19706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96b84a210f9215248bda9be0301e9ac9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 5
   rotateSpeed: 75
   jumpVelocity: 5
   distanceToGround: 0.1
@@ -29979,9 +29979,9 @@ RectTransform:
   - {fileID: 1167911798}
   m_Father: {fileID: 703244308}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 294.99997, y: 151}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -98.00003, y: -97}
   m_SizeDelta: {x: 178, y: 178}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1182670884
