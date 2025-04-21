@@ -24,11 +24,16 @@ public class PlayerBehavior : MonoBehaviour
     private CapsuleCollider _col;
     private GameBehavior _gameManager;
 
+    // audio
+    public AudioClip Shotgun;
+    private AudioSource audioSource;
+
     void Start()
     {
         _rb = GetComponent<Rigidbody>();
         _col = GetComponent<CapsuleCollider>();
         _gameManager = GameObject.Find("GameManager").GetComponent<GameBehavior>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -68,6 +73,12 @@ public class PlayerBehavior : MonoBehaviour
         {
             // 3
             doShoot = false;
+
+            if (Shotgun != null && audioSource != null)
+                {
+                    audioSource.PlayOneShot(Shotgun);
+                }
+
             GameObject newBullet = Instantiate(bullet,
                this.transform.position + this.transform.right,
                   this.transform.rotation) as GameObject;
